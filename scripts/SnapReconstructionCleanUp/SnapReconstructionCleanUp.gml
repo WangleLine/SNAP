@@ -6,15 +6,6 @@
 
 function SnapReconstructionCleanUp(_value, _instanceofVariableName = "__instanceof__")
 {
-    try
-    {
-        static_get(SnapReconstructionCleanUp);
-    }
-    catch(_error)
-    {
-        show_error("SNAP:\nSnapReconstructionCleanUp() not supported\nPlease update to a version of GameMaker with native function static_get()\n ", true); 
-    }
-    
     __SnapReconstructionCleanUpInner(_value, _instanceofVariableName);
 }
 

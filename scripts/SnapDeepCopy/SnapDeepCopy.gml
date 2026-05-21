@@ -13,15 +13,6 @@
 
 function SnapDeepCopy(_value)
 {
-    try
-    {
-        static_get(SnapDeepCopy);
-    }
-    catch(_error)
-    {
-        show_error("SNAP:\nSnapDeepCopy() not supported\nPlease update to a version of GameMaker with native function static_get()\nAlternatively, use SnapDeepCopyLegacy()\n ", true); 
-    }
-    
     return __SnapDeepCopyInner(_value, self, self);
 }
 

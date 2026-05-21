@@ -32,15 +32,6 @@
 
 function SnapReconstructionPack(_value, _instanceofVariableName = "__instanceof__", _unsetConstructor = false)
 {
-    try
-    {
-        static_get(SnapReconstructionPack);
-    }
-    catch(_error)
-    {
-        show_error("SNAP:\nSnapReconstructionPack() not supported\nPlease update to a version of GameMaker with native function static_get()\n ", true); 
-    }
-    
     __SnapReconstructionPackInner(_value, _instanceofVariableName, _unsetConstructor);
 }
 

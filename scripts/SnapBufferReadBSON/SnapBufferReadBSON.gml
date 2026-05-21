@@ -15,29 +15,27 @@
 /// @param offset                           Start position for binary decoding in the buffer. Defaults to 0, the start of the buffer
 /// @param [skipEmbeddedBuffers=true]       Skip past any embedded buffers. Defaults to 0
 /// @param [embeddedBufferType=undefined]   Overrides the internal buffer subtype for embedded buffers, see `subtype` in the spec for more information
-
-/*
-    0x00  -  EOO (end of object)
-    0x01  -  double
-    0x02  -  string
-    0x03  -  document (struct)
-    0x04  -  array (encoded as a document)
-    0x05  -  binary blob
-    0x06  -  <undefined>        (deprecated)
-    0x07  -  object ID
-    0x08  -  boolean
-    0x09  -  UTCdatetime
-    0x0A  -  <null>
-    0x0B  -  regex
-    0x0C  -  DB pointer         (deprecated)
-    0x0D  -  JS code            (unsupported)
-    0x0E  -  symbol             (deprecated)
-    0x0F  -  JS code with scope (deprecated)
-    0x10  -  int32
-	0x11  -  uint64             (unsupported)
-	0x12  -  int64
-    0x13  -  decimal128         (unsupported)
-*/
+/// 
+/// 0x00  EOO                (end of object)
+/// 0x01  double
+/// 0x02  string
+/// 0x03  document           (struct)
+/// 0x04  array              (encoded as a document)
+/// 0x05  binary blob
+/// 0x06  undefined          (deprecated)
+/// 0x07  object ID
+/// 0x08  boolean
+/// 0x09  UTCdatetime
+/// 0x0A  null
+/// 0x0B  regex
+/// 0x0C  DB pointer         (deprecated)
+/// 0x0D  JS code            (unsupported)
+/// 0x0E  symbol             (deprecated)
+/// 0x0F  JS code with scope (deprecated)
+/// 0x10  int32
+/// 0x11  uint64             (unsupported)
+/// 0x12  int64
+/// 0x13  decimal128         (unsupported)
 
 function SnapBufferReadBSON(_buffer, _offset, _skipEmbeddedBuffers = false, _embeddedBufferType = undefined)
 {

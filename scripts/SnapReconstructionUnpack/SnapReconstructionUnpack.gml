@@ -14,16 +14,7 @@
 /// @param [cleanUp=true]
 
 function SnapReconstructionUnpack(_value, _instanceofVariableName = "__instanceof__", _cleanUp = true)
-{
-    try
-    {
-        static_get(SnapReconstructionUnpack);
-    }
-    catch(_error)
-    {
-        show_error("SNAP:\nSnapReconstructionUnpack() not supported\nPlease update to a version of GameMaker with native function static_get()\n ", true); 
-    }
-    
+
     __SnapReconstructionUnpackInner(_value, _instanceofVariableName, _cleanUp);
 }
 
