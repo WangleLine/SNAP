@@ -447,6 +447,7 @@ function SnapEnvGMLSetNativeTokens()
     SnapEnvGMLSetToken("os_uwp", os_uwp);
     SnapEnvGMLSetToken("os_tvos", os_tvos);
     SnapEnvGMLSetToken("os_switch", os_switch);
+    SnapEnvGMLSetToken("os_switch2", os_switch2);
     SnapEnvGMLSetToken("os_ps5", os_ps5);
     SnapEnvGMLSetToken("os_xboxseriesxs", os_xboxseriesxs);
     SnapEnvGMLSetToken("os_gdk", os_gdk);
