@@ -118,7 +118,7 @@ function __SnapToXMLBufferInner(_buffer, _struct, _indent)
 
 function __SnapToXMLWriteEscapedString(_buffer, _string)
 {
-    if (string_pos(_string, "&") > 0)
+    if (string_pos("&", _string) > 0)
     {
         _string = string_replace_all(_string, "\"", "&quot;");
         _string = string_replace_all(_string, "'",  "&apos;");
